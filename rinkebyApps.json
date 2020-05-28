@@ -1,0 +1,198 @@
+{
+    "tokenManager": {
+        "contractAddress": "0xE775468F3Ee275f740A22EB9DD7aDBa9b7933Aa0",
+        "appId": "0x6b20a3010614eeebf2138ccec99f028a61c811b3b1a3343b6ff635985c75c91f",
+        "signatures": [
+            "initialize(address,bool,uint256)",
+            "mint(address,uint256)",
+            "issue(uint256)",
+            "assign(address,uint256)",
+            "burn(address,uint256)",
+            "assignVested(address,uint256,uint64,uint64,uint64,bool)",
+            "revokeVesting(address,uint256)",
+            "onTransfer(address,address,uint256)",
+            "onApprove(address,address,uint256)",
+            "proxyPayment(address)",
+            "forward(bytes)",
+            "onTransfer(address,address,uint)",
+            "onApprove(address,address,uint)"
+        ]
+    },
+    "dandelionVoting": {
+        "contractAddress": "0x865511DCA976E036AB5e559DCCD8d6396893Ab40",
+        "appId": "0x2d7442e1c4cb7a7013aecc419f938bdfa55ad32d90002fb92ee5969e27b2bf07",
+        "signatures": [
+            "initialize(address,uint64,uint64,uint64,uint64,uint64)",
+            "changeSupportRequiredPct(uint64)",
+            "changeMinAcceptQuorumPct(uint64)",
+            "changeBufferBlocks(uint64)",
+            "changeExecutionDelayBlocks(uint64)",
+            "newVote(bytes,string,bool)",
+            "vote(uint256,bool)",
+            "executeVote(uint256)",
+            "forward(bytes)"       
+        ]
+    },
+    "issuance": {
+        "contractAddress": "0xccD2539dBDbf95A6A13B8Bf60a7931EB643DB873",
+        "appId": "0x5302bcb7d5bb0a62263a64ce20773e74bf366f971e8903f3679b2fd485ba4e10",
+        "signatures": [
+            "initialize(address)",
+            "addPolicy(address,uint256)",
+            "removePolicy(uint256)",
+            "executeIssuance()"            
+        ]
+    },
+    "redemptions": {
+        "contractAddress": "0xe47d2A5D3319E30D1078DB181966707d8a58dE98",   
+        "appId": "0x743bd419d5c9061290b181b19e114f36e9cc9ddb42b4e54fc811edb22eb85e9d",  
+        "signatures": [
+            "initialize(address,address,address[])",
+            "addRedeemableToken(address)",
+            "removeRedeemableToken(address)",
+            "redeem(uint256)"
+        ]
+    },
+    "dotVoting": {
+        "contractAddress": "0x7b3533c0Add09b19a9890FDD8F93c522a6A6a958",
+        "appId": "0x6bf2b7dbfbb51844d0d6fdc211b014638011261157487ccfef5c2e4fb26b1d7e",   
+        "signatures": [
+            "initialize(address,uint256,uint256,uint64)",
+            "newVote(bytes,string)",
+            "vote(uint256,uint256[])",
+            "executeVote(uint256)",
+            "setglobalCandidateSupportPct(uint256)",
+            "setGlobalQuorum(uint256)",
+            "addCandidate(uint256,string,address,bytes32,bytes32)",
+            "forward(bytes)"
+        ]
+    },
+    "marketplace": {
+        "contractAddress": "0xc7Ad220DBCC0693d35f18249cF567721D2fAA43E",
+        "appId": "0x5fc8fca88a696fa79cf16460ed65d5ab1181e24a79c34c66848b71051ed65ea6",
+        "signatures": [
+            "initialize(address,address,address,address,address[])",
+            "updateBeneficiary(address)",
+            "updateFees(uint256,uint256)",
+            "openPresale()",
+            "closePresale()",
+            "contribute(uint256)",
+            "refund(address,uint256)",
+            "openTrading()",
+            "openBuyOrder(address,uint256)",
+            "openSellOrder(address,uint256)",
+            "claimBuyOrder(address,uint256,address)",
+            "claimSellOrder(address,uint256,address)",
+            "addCollateralToken(address,uint256,uint256,uint32,uint256,uint256,uint256)",
+            "reAddCollateralToken(address,uint256,uint256,uint32,uint256)",
+            "removeCollateralToken(address)",
+            "updateCollateralToken(address,uint256,uint256,uint32,uint256)",
+            "updateMaximumTapRateIncreasePct(uint256)",
+            "updateMaximumTapFloorDecreasePct(uint256)",
+            "addTokenTap(address,uint256,uint256)",
+            "updateTokenTap(address,uint256,uint256)",
+            "updateTappedAmount(address)",
+            "withdraw(address)"
+        ]
+    },
+    "bancorFormula": {
+        "contractAddress": "0x9ac140F489Df1481C20FeB318f09b29A4f744915"
+    },
+    "marketMaker": {
+        "contractAddress": "0xF9B1870D91fBc33b4B03527F1C80e6eF26a665e9",
+        "appId": "0xc2bb88ab974c474221f15f691ed9da38be2f5d37364180cec05403c656981bf0",
+        "signatures": [
+            "initialize(address,address,address,address,address,uint256,uint256,uint256)",
+            "open()",
+            "updateFormula(address)",
+            "updateBeneficiary(address)",
+            "updateFees(uint256,uint256)",
+            "addCollateralToken(address,uint256,uint256,uint32,uint256)",
+            "removeCollateralToken(address)",
+            "updateCollateralToken(address,uint256,uint256,uint32,uint256)",
+            "openBuyOrder(address,address,uint256)",
+            "openSellOrder(address,address,uint256)",
+            "claimBuyOrder(address,uint256,address)",
+            "claimSellOrder(address,uint256,address)",
+            "claimCancelledBuyOrder(address,uint256,address)",
+            "claimCancelledSellOrder(address,uint256,address)"
+        ]
+    },
+    "presale": {
+        "contractAddress": "0x87D63b17A853Ebc21F459828e8A646559466d1C4",
+        "appId": "0x5de9bbdeaf6584c220c7b7f1922383bcd8bbcd4b48832080afd9d5ebf9a04df5",
+        "signatures": [
+            "initialize(address,address,address,address,address,uint256,uint64,uint256,uint64,uint64,uint256,uint256,uint64)",
+            "open()",
+            "contribute(address,uint256)",
+            "refund(address,uint256)",
+            "close()"
+        ]
+    },
+    "tap": {
+        "contractAddress": "0x93E6536F35DA49908Ae92aeD2435B8c5c78069Dd",
+        "appId": "0x82967efab7144b764bc9bca2f31a721269b6618c0ff4e50545737700a5e9c9dc",
+        "signatures": [
+            "initialize(address,address,address,uint256,uint256,uint256)",
+            "updateBeneficiary(address)",
+            "updateMaximumTapRateIncreasePct(uint256)",
+            "updateMaximumTapFloorDecreasePct(uint256)",
+            "addTappedToken(address,uint256,uint256)",
+            "removeTappedToken(address)",
+            "updateTappedToken(address,uint256,uint256)",
+            "resetTappedToken(address)",
+            "updateTappedAmount(address)",
+            "withdraw(address)",
+            "updateController(address)",
+            "updateReserve(address)"
+        ]
+    },
+    "agent": {
+        "contractAddress": "0xd3bbC93Dbc98128fAC514Be911e285102B931b5e",
+        "appId": "0x9ac98dc5f995bf0211ed589ef022719d1487e5cb2bab505676f0d084c07cf89a",
+        "signatures": [
+            "initialize()",
+            "execute(address,uint256,bytes)",
+            "safeExecute(address,bytes)",
+            "addProtectedToken(address)",
+            "removeProtectedToken(address)",
+            "presignHash(bytes32)",
+            "setDesignatedSigner(address)",
+            "onERC721Received(address,address,uint256,bytes)",
+            "forward(bytes)",
+            "fallback",
+            "deposit(address,uint256)",
+            "transfer(address,address,uint256)"
+        ]
+    },
+    "vault": {
+        "contractAddress": "0x35c5Abf253C873deE9ee4fe2687CD378Eff1263e",  
+        "appId": "0x7e852e0fcfce6551c13800f1e7476f982525c2b5277ba14b24339c68416336d1",
+        "signatures": [
+            "initialize()",
+            "fallback",
+            "deposit(address,uint256)",
+            "transfer(address,address,uint256)"
+        ]
+    },
+    "finance": {
+        "contractAddress": "0x94D3013A8700E8B168f66529aD143590CC6b259d",
+        "appId": "0xbf8491150dafc5dcaee5b861414dca922de09ccffa344964ae167212e8c673ae",
+        "signatures": [
+            "initialize(address,uint64)",
+            "fallback",
+            "deposit(address,uint256,string)",
+            "newImmediatePayment(address,address,uint256,string)",
+            "newScheduledPayment(address,address,uint256,uint64,uint64,uint64,string)",
+            "setPeriodDuration(uint64)",
+            "setBudget(address,uint256)",
+            "removeBudget(address)",
+            "executePayment(uint256)",
+            "receiverExecutePayment(uint256)",
+            "setPaymentStatus(uint256,bool)",
+            "recoverToVault(address)",
+            "tryTransitionAccountingPeriod(uint64)",
+            "newPayment(address,address,uint256,uint64,uint64,uint64,string)"
+        ]
+    }
+}
